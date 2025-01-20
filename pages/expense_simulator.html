@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Simulator</title>
+</head>
+<body>
+    <section>
+        <h1>Expense Simulator</h1>
+        <div>
+            <p>Remaining balance: <span id="balance">0$</span></p>
+        </div>
+        <div>
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button id="add-transaction">Add</button>
+        </div>
+        <div>
+            <h3>Transactions:</h3>
+            <ul id="transaction-list"></ul>
+        </div>
+        <a href="/">Return to home</a>
+    </section>
+    <script src="../scripts/expense_simulator.js"></script>
+</body>
+</html>
