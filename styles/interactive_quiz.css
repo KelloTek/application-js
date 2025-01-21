@@ -1,0 +1,127 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Quiz container */
+#quiz {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.answers {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.answers li {
+    margin: 5px 0;
+}
+
+label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Submit button */
+#submit {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#submit:active {
+    background-color: #003f8c;
+    transform: scale(1);
+}
+
+/* Results container */
+#results {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+/* Return to home link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #submit {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .question {
+        font-size: 1rem;
+    }
+
+    #results {
+        font-size: 1rem;
+    }
+}

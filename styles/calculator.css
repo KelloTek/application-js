@@ -1,0 +1,120 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Display styles */
+#display {
+    width: 90%;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#display:disabled {
+    cursor: not-allowed;
+}
+
+/* Buttons container */
+section div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f8c;
+}
+
+/* Special buttons */
+button:nth-child(1) { /* Clear button */
+    background-color: #ff4d4d;
+}
+
+button:nth-child(1):hover {
+    background-color: #e60000;
+}
+
+button:nth-child(17) { /* Equals button */
+    grid-column: span 2;
+    background-color: #28a745;
+}
+
+button:nth-child(17):hover {
+    background-color: #1e7e34;
+}
+
+/* Link styles */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #display {
+        font-size: 1.2rem;
+    }
+}
